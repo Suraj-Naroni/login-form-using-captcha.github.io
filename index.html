@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="form-title">User Login</div>
+      <div class="form-input">
+        <label for="Username">Username</label>
+        <input type="text" id="username" />
+      </div>
+
+      <div class="form-input">
+        <label for="Password">Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div class="captcha">
+        <label for="captcha-input"></label>
+      </div>
+      <div class="preview"></div>
+      <div class="captcha-form">
+        <input type="text" id="captcha-form" placeholder="Enter Captcha" />
+        <button class="captcha-refresh">
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </div>
+
+      <div class="form-input">
+        <button id="login-btn">Login</button>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
